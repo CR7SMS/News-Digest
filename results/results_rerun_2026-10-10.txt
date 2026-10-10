@@ -1,0 +1,41 @@
+Re-run evaluation results -- 2026-10-10
+Prompt: current tuned (v4) SCORE_PROMPT from score_articles.py, sha256[:12]=2078285fe7c6
+Test set: labels_test.csv (n=50). Metric: per-axis MAE vs hand labels; OVERALL = mean of 5 axis MAEs.
+Sources: 'api' = fresh call made 2026-10-10 (cached in rerun_cache_2026-10-10.jsonl);
+         'log' = per-article scores parsed from model_comparison.txt (Aug 30, same prompt, printed rounded to integers).
+
+== gemini-flash-latest (fresh, no fallback): 21/50 scored, 0 unparseable ==
+  gemini-flash-latest [api]                    N=21  scale=1.38 relevance=1.05 major_lab=1.62 preference=2.33 substance=1.52  OVERALL=1.58
+  claude-sonnet-5 [log] same subset            N=21  scale=1.19 relevance=1.33 major_lab=1.33 preference=2.10 substance=1.43  OVERALL=1.48
+  gpt-5.1 [log] same subset                    N=21  scale=1.19 relevance=2.14 major_lab=1.43 preference=1.81 substance=1.48  OVERALL=1.61
+  gemini-flash-lite-latest [api] same subset   N=21  scale=1.43 relevance=1.43 major_lab=1.71 preference=2.19 substance=1.57  OVERALL=1.67
+  gemini-flash-lite-latest [log] same subset   N=21  scale=1.38 relevance=1.33 major_lab=1.48 preference=2.43 substance=1.48  OVERALL=1.62
+
+== gemini-flash-lite-latest (fresh, no fallback): 50/50 scored, 0 unparseable ==
+  gemini-flash-lite-latest [api]               N=50  scale=1.62 relevance=1.30 major_lab=1.64 preference=2.20 substance=1.30  OVERALL=1.61
+  claude-sonnet-5 [log] same subset            N=50  scale=1.32 relevance=1.42 major_lab=1.54 preference=1.98 substance=1.48  OVERALL=1.55
+  gpt-5.1 [log] same subset                    N=50  scale=1.44 relevance=2.10 major_lab=1.46 preference=1.88 substance=1.42  OVERALL=1.66
+  gemini-flash-latest [api] same subset        N=21  scale=1.38 relevance=1.05 major_lab=1.62 preference=2.33 substance=1.52  OVERALL=1.58
+
+== Full-set reference (all models/sources available) ==
+  claude-sonnet-5 [log]                        N=50  scale=1.32 relevance=1.42 major_lab=1.54 preference=1.98 substance=1.48  OVERALL=1.55
+  gpt-5.1 [log]                                N=50  scale=1.44 relevance=2.10 major_lab=1.46 preference=1.88 substance=1.42  OVERALL=1.66
+  gemini-flash-lite-latest [api]               N=50  scale=1.62 relevance=1.30 major_lab=1.64 preference=2.20 substance=1.30  OVERALL=1.61
+  gemini-flash-lite-latest [log]               N=30  scale=1.40 relevance=1.43 major_lab=1.57 preference=2.17 substance=1.20  OVERALL=1.55
+  gemini-flash-latest [api]                    N=21  scale=1.38 relevance=1.05 major_lab=1.62 preference=2.33 substance=1.52  OVERALL=1.58
+
+== Subset of the 30 articles flash-lite completed on Aug 30 (model_comparison.txt) ==
+  gemini-flash-lite-latest [log] Aug-30 lite subset N=30  scale=1.40 relevance=1.43 major_lab=1.57 preference=2.17 substance=1.20  OVERALL=1.55
+  gemini-flash-lite-latest [api] Aug-30 lite subset N=30  scale=1.57 relevance=1.47 major_lab=1.80 preference=1.97 substance=1.37  OVERALL=1.63
+  claude-sonnet-5 [log] Aug-30 lite subset     N=30  scale=1.33 relevance=1.53 major_lab=1.53 preference=1.90 substance=1.30  OVERALL=1.52
+  gpt-5.1 [log] Aug-30 lite subset             N=30  scale=1.37 relevance=2.33 major_lab=1.60 preference=1.73 substance=1.40  OVERALL=1.69
+
+== Notes ==
+- v1 (baseline) prompt: NOT FOUND. The only git commit (f166d86, Aug 22) has only LICENSE/README/.gitattributes;
+  __pycache__/score_articles.cpython-313.pyc was compiled from the current Aug 30 15:03:46 source (v4);
+  there are no .bak/.orig/notebook copies; the result txt files don't print the prompt; no Claude Code transcripts
+  for the repo exist. So the clean Claude-on-v1 baseline (and GPT-on-v1) was NOT run.
+- gemini-flash-latest stopped at 21/50 on a daily free-tier 429 (generate_content_free_tier_requests).
+  Resume tomorrow (cached articles are skipped):
+    .\.venv\Scripts\python.exe rerun_eval.py run gemini-flash-latest; .\.venv\Scripts\python.exe rerun_eval.py report
+- 'log' scores come from Aug 30 output printed as integers; recomputed full-set MAEs match model_comparison.txt exactly.

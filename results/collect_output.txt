@@ -1,0 +1,32 @@
+Current pool: 81/100 readable articles.
+Fetching 'AI' news from the last 24h...
+Got 89 candidates, 89 not already in the pool. Extracting...
+
+[SKIP: fetch_url returned nothing (network error, timeout, or blocked)] [Google News] The Fed confronts a powerful new economic force - The Washington Post
+[ADDED 82/100] [Google News] Sharp rise in incidents of AI escaping users’ control, research finds - The Guardian
+[ADDED 83/100] [Google News] Tech backlash reaches fever pitch as AI angst collides with social media fears - CNBC
+[SKIP: fetch_url returned nothing (network error, timeout, or blocked)] [Google News] The 5 craziest discoveries from OpenAI's HuggingFace investigation - Axios
+[ADDED 84/100] [Google News] Our decision on Cursor following its acquisition by SpaceX - OpenAI
+[ADDED 85/100] [Google News] Texas Gov. Greg Abbott moves to cut state funding for AI-powered Flock cameras amid privacy concerns - Fox News
+[SKIP: fetch_url returned nothing (network error, timeout, or blocked)] [Google News] An AI Oracle’s Rise and Fall - WSJ
+[SKIP: fetch_url returned nothing (network error, timeout, or blocked)] [Google News] The turbulent AI era is here. The choices we make now are critical. - gatesnotes.com
+[ADDED 86/100] [Google News] Confessions of an AI Editor - The Nation
+[ADDED 87/100] [Google News] How Will AI Impact the Future of the Clinical Workforce? - WCM Newsroom
+[SKIP: fetch_url returned nothing (network error, timeout, or blocked)] [Google News] Thievery or Innovation? The Music Industry Grapples With A.I. - The New York Times
+[ADDED 88/100] [Google News] We’re Now Relying on AI to Police AI - Mother Jones
+[ADDED 89/100] [Google News] AI in the Catholic classroom: As a new school year starts, what role does it play? - OSV News
+[ADDED 90/100] [Google News] Appeals court delivers unsettling ruling — and says Supreme Court left it no choice - Fox News
+[ADDED 91/100] [Google News] Will You Shape AI Or Will AI Shape You? - Forbes
+[ADDED 92/100] [Google News] Nvidia’s AI advantage is moving beyond the GPU - TechCrunch
+[ADDED 93/100] [Google News] Public can testify Monday at AI and data center committee - North Dakota Monitor
+[SKIP: fetch_url returned nothing (network error, timeout, or blocked)] [Google News] OpenAI to cut off AI models for SpaceX-owned Cursor, escalating feud with Musk - Reuters
+[ADDED 94/100] [Google News] Did AI write this? It’s getting harder to tell - Financial Times
+[ADDED 95/100] [Google News] Security News This Week: The Cybersecurity Apocalypse Is Coming in ‘Months,’ AI Giants Warn - WIRED
+[ADDED 96/100] [Google News] YSU Researchers Present Work on Ethics Surrounding AI Adoption - Business Journal Daily
+[ADDED 97/100] [Google News] Op-ed: Salesforce just revealed the next battleground in AI — and it's not the models - CNBC
+[ADDED 98/100] [Google News] I used Claude to solve a problem that data centers helped cause for my photography business. It's saved me thousands. - Business Insider
+[ADDED 99/100] [Google News] MUSC receives grant to develop AI system for youth suicide prevention - Live 5 News
+[ADDED 100/100] [Google News] U of I leads AI research to breed stronger cereal crops - University of Idaho
+
+Added 19 today. Pool now: 100/100.
+Target reached — labels.csv is ready for you to hand-label.

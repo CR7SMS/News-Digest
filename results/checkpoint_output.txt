@@ -1,0 +1,36 @@
+Fetching 'AI' news from the last 24h...
+Got 105 candidates. Getting stage-1 shortlist...
+
+  Gemini overloaded, retrying in 10s (attempt 1/4)...
+Shortlist: 20 articles. Attempting full-text extraction...
+
+[READABLE  33958 chars] [Hacker News] Show HN: Writing-eval, local deterministic style checks for AI-written drafts
+[READABLE   1015 chars] [Google News] Anthropic’s best AI model struggles to attract users as cheaper tools thrive - Financial Times
+[READABLE  19262 chars] [Hacker News] Prism Reviewer – Multi-agent AI code reviewer built with LangGraph and LiteLLM
+[FAILED] [Google News] Mystery AI Model Ox Alpha Draws Developers With Free Access - Bloomberg.com
+         reason: fetch_url returned nothing (network error, timeout, or blocked)
+         link:   https://news.google.com/rss/articles/CBMirwFBVV95cUxQc29aQ2VnX2hNVmtsOENoUWVtRW8wcm82MUt4Uld4SWlzZzM2R1lsTnhWbk9qbUtzcXhfMGV4dlFWT3BlWEVjdF9yNzlLS1JBSTRrMEgtaXhBaFFGVG9rX0NrTk9ZLXF6bUVRTWl5ejlHTWx1b2FlTEVoWkNUR2VvVGNMd1p5T3JnalpKU003LVFHbk1YX3ZPNWM1SWNzQy1mb0xsRHJCTXp0QU1qLWpn?oc=5
+[READABLE  15584 chars] [Hacker News] I spent $266 and four AI models to own my tablet. GLM-5.3 finished it in a day
+[READABLE   1561 chars] [Google News] Hugging Face has been fielding M&A interest for a deal worth at least $13 billion - Business Insider
+[READABLE  10826 chars] [Hacker News] Soofi S 31.6B. German Open Moe Explained
+[READABLE   5635 chars] [Google News] AI Data Wars Begin As Google, Mercor And Micro1 Bid For Spirit’s Data - Forbes
+[READABLE   7202 chars] [Google News] ‘We are hitting a different chapter’: OpenAI leader warns of threat of ‘persistent’ AI cyber-attacks - The Guardian
+[READABLE   6678 chars] [Hacker News] Woe Is Em: The Sad Lifecycle of an AI Tell
+[READABLE  18879 chars] [Hacker News] The Web-Search Latency Your Agent Pays
+[READABLE   3193 chars] [Google News] OpenAI wants California to strengthen its newly passed AI safety law - Mashable
+[READABLE   4419 chars] [Hacker News] Show HN: Declarative, reproducible configuration materializer for AI agents
+[READABLE   1786 chars] [Google News] Twitch And Amazon Hit With Lawsuit For Training AI With Streamers' Content - Engadget
+[READABLE   5782 chars] [Google News] Is it legal to train AI models on copyrighted books? It’s complicated - TechCrunch
+[READABLE   9783 chars] [Google News] Why real-time AI at scale is so hard - The New Stack
+[READABLE    910 chars] [Google News] Legal tech start-ups put AI disruption in a risky new wrapper - Financial Times
+[FAILED] [Google News] Alibaba launches $10 billion Hong Kong share placement to fund AI spending - Reuters
+         reason: fetch_url returned nothing (network error, timeout, or blocked)
+         link:   https://news.google.com/rss/articles/CBMivAFBVV95cUxOSHJGOUFEMWhrdjlTbk5JelZ2Zl9jNWZ3UjRUTFVZX3hyTmx2bnZ2Qi1Ob3FPZGdBNkoyOHpfRXk3YzFpYXMwNkZHb09uX01jWDRVZ3lJSi1rM2ZGbldMV1J1d0lLUWFTS1FLcHowTXNobENIUkxody01eDItOHZucHRUV0xjME80UkxscjVNX1dnRUlHY1BCN3o5TV9CMFNzcnlobjJBVWdyMHNiQjNtT090bEV6WXQyUU5SdQ?oc=5
+[FAILED] [Google News] Nvidia Is Spending $6 Billion to Build a Powerful U.S. Alternative to Chinese AI - WSJ
+         reason: fetch_url returned nothing (network error, timeout, or blocked)
+         link:   https://news.google.com/rss/articles/CBMitgFBVV95cUxPWHdVbW56NVZvU3ZwQTRIcmdRUVVZWjBVc1J4TFhhVUs2VE5RY21CNEpSdHA2NUJLa0daUVhYcGJwaGh6bERReE5fcFdFdHJ5bWpXa1dPTkFweDVVS3AycGxMa3VqS2JDS0VTZDNIb2RYLVVYcmdxT2xQUUpRSXNFbHhTTVozVjVyUkVYRmItTzc5SlIwS2M0NVZseUtUWFZDX3V6azMxTHJhdHJwYm5XU28yUmlzUQ?oc=5
+[READABLE   5355 chars] [Google News] I created a viral AI watermark remover. I wasn't ready for all the attention. - Business Insider
+
+############ Summary ############
+Readable:   17/20
+Unreadable: 3/20 (filtered out — paywalled/blocked/too short)

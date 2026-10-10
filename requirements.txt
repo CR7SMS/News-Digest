@@ -1,0 +1,12 @@
+# Direct dependencies, pinned to the versions the project was developed and
+# evaluated with (Python 3.13). Transitive dependencies are resolved by pip.
+feedparser==6.0.14
+requests==2.34.2
+python-dotenv==1.2.3
+google-genai==2.19.0
+openai==3.3.1
+anthropic==1.2.0
+trafilatura==2.2.0
+googlenewsdecoder==0.1.7
+# googlenewsdecoder imports selectolax.parser, which selectolax>=1.0 removed
+selectolax==0.4.11

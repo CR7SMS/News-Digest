@@ -1,0 +1,52 @@
+name: Daily AI news digest
+
+on:
+  schedule:
+    # 14:00 UTC = 7:00 AM Pacific during daylight time (6:00 AM in winter).
+    # GitHub may start scheduled runs a few minutes late.
+    - cron: "0 14 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build and email the digest
+        env:
+          PYTHONUNBUFFERED: "1"
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DIGEST_EMAIL_FROM: ${{ secrets.DIGEST_EMAIL_FROM }}
+          DIGEST_EMAIL_TO: ${{ secrets.DIGEST_EMAIL_TO }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python run_digest.py
+
+      - name: Upload digest HTML
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: digest-${{ github.run_number }}
+          path: output/
+          if-no-files-found: warn
+          retention-days: 30

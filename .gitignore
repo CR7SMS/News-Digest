@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+
+# Labeled dataset + scraped article full text (copyright / personal labels)
+training_pool.jsonl
+labels.csv
+labels_train.csv
+labels_test.csv
+labels*.csv
+
+# Generated digests (contain the day's article links/reasons; regenerated daily)
+output/
+
+# Local scratch backups
+_eval_rerun_backup_2026-10-10/
