@@ -4,6 +4,10 @@ A small, daily **AI news digest** that uses an LLM as a judge. Every morning it 
 
 It's also a worked example of the idea that **evaluating an LLM app doesn't have to be complicated**: 100 hand-labeled articles, a train/test split, and mean absolute error per axis were enough to tune the judge prompt and pick a model with evidence instead of vibes.
 
+## Sample Output
+
+<img width="632" height="629" alt="image" src="https://github.com/user-attachments/assets/f4cea89e-2e06-406b-ac43-3f343eab8341" />
+
 ---
 
 ## How it works
